@@ -1,0 +1,12 @@
+com\mycompany\musicplayer\MediaController.class
+com\mycompany\musicplayer\Controller.class
+com\mycompany\musicplayer\Controller$2.class
+com\mycompany\musicplayer\SongController.class
+com\mycompany\musicplayer\PrimaryController.class
+com\mycompany\musicplayer\App.class
+com\mycompany\musicplayer\RegisterController.class
+com\mycompany\model\playlist.class
+com\mycompany\model\Song.class
+com\mycompany\model\album.class
+com\mycompany\musicplayer\Controller$1.class
+com\mycompany\musicplayer\LoginController.class

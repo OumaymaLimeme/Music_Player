@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.musicplayer.RegisterController">
+   <children>
+      <ImageView fitHeight="754.0" fitWidth="1268.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/background%20login.jpeg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="451.0" layoutY="22.0" prefHeight="522.0" prefWidth="406.0" styleClass="signin_background" stylesheets="@../../../styles/style.css">
+         <children>
+            <Label layoutX="153.0" layoutY="25.0" prefHeight="40.0" prefWidth="100.0" text="Register" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="38.0" layoutY="135.0" prefHeight="40.0" prefWidth="100.0" text="Email:" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="38.0" layoutY="193.0" prefHeight="40.0" prefWidth="100.0" text="Age:" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="38.0" layoutY="256.0" prefHeight="40.0" prefWidth="100.0" text="Gender:" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="38.0" layoutY="73.0" prefHeight="40.0" prefWidth="127.0" text="Username" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="38.0" layoutY="317.0" prefHeight="40.0" prefWidth="100.0" text="Password:" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="38.0" layoutY="376.0" prefHeight="40.0" prefWidth="100.0" text="CPassword:" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtusername" layoutX="187.0" layoutY="81.0" promptText="Username" />
+            <TextField fx:id="txtemail" layoutX="187.0" layoutY="143.0" promptText="Email" />
+            <CheckBox fx:id="chkmale" layoutX="177.0" layoutY="264.0" mnemonicParsing="false" text="Male" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="chkfemale" layoutX="282.0" layoutY="264.0" mnemonicParsing="false" text="Female" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </CheckBox>
+            <PasswordField fx:id="txtpassword" layoutX="179.0" layoutY="325.0" promptText="password" />
+            <PasswordField fx:id="txtcpassword" layoutX="179.0" layoutY="384.0" promptText="confirm password" />
+            <TextField fx:id="txtage" layoutX="187.0" layoutY="201.0" promptText="Age (number)" />
+            <Button fx:id="reset_btn" layoutX="62.0" layoutY="435.0" mnemonicParsing="false" onMouseClicked="#Reset" prefHeight="40.0" prefWidth="80.0" styleClass="login_button" stylesheets="@../../../styles/style.css" text="Reset" />
+            <Button fx:id="submit_btn" layoutX="256.0" layoutY="435.0" mnemonicParsing="false" onMouseClicked="#Submit" prefHeight="40.0" prefWidth="80.0" styleClass="login_button" stylesheets="@../../../styles/style.css" text="Submit" />
+         </children>
+      </AnchorPane>
+      <Button fx:id="back_btn" layoutX="15.0" layoutY="15.0" mnemonicParsing="false" onMouseClicked="#back_to_login" prefHeight="40.0" prefWidth="80.0" styleClass="login_button" stylesheets="@../../../styles/style.css" text="Back" />
+   </children>
+</AnchorPane>

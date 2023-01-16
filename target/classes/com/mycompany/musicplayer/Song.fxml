@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="246.0" prefWidth="197.0" stylesheets="@../../../styles/style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.musicplayer.SongController">
+   <children>
+      <ImageView fx:id="img" fitHeight="207.0" fitWidth="184.0" pickOnBounds="true" smooth="false">
+         <image>
+            <Image url="@../../../img/shapeofyou.jpg" />
+         </image>
+         <VBox.margin>
+            <Insets left="7.0" />
+         </VBox.margin>
+      </ImageView>
+      <Label fx:id="songName" prefHeight="18.0" prefWidth="151.0" text="   Shape of You" textFill="WHITE">
+         <font>
+            <Font name="Comic Sans MS Bold" size="14.0" />
+         </font>
+         <VBox.margin>
+            <Insets left="40.0" />
+         </VBox.margin>
+      </Label>
+      <Label fx:id="artist" prefHeight="18.0" prefWidth="203.0" text="   ED SHEERAN" textFill="#fffbfb">
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font>
+         <VBox.margin>
+            <Insets left="40.0" />
+         </VBox.margin>
+      </Label>
+   </children>
+   <styleClass>
+      <String fx:value="parent" />
+      <String fx:value="sidebar" />
+   </styleClass>
+</VBox>
